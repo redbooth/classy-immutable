@@ -1,6 +1,6 @@
 {
   "name": "classy-immutable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Immutable instances of ES6 classes.",
   "keywords": [
     "es6",
@@ -23,5 +23,8 @@
   },
   "scripts": {
     "test": "mocha --colors --compilers js:babel-register"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["es2015"] }]]
   }
 }
