@@ -2,7 +2,12 @@
   "name": "classy-immutable",
   "version": "1.0.0",
   "description": "Immutable instances of ES6 classes.",
-  "keywords": ["es6", "es2015", "class", "immutable"],
+  "keywords": [
+    "es6",
+    "es2015",
+    "class",
+    "immutable"
+  ],
   "homepage": "https://github.com/aerofs/classy-immutable",
   "license": "GPL-3.0",
   "author": "Barry Shapira <barry@aerofs.com>",
@@ -11,10 +16,12 @@
     "url": "https://github.com/aerofs/classy-immutable"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
   },
   "scripts": {
-    "test": "NODE_PATH=. mocha --compilers js:babel/register --recursive"
+    "test": "mocha --colors --compilers js:babel-register"
   }
 }

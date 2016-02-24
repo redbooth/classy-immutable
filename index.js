@@ -75,4 +75,4 @@ class Immutable {
     }
 }
 
-module.exports = Immutable;
+export default Immutable;
