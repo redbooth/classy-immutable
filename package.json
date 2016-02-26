@@ -1,6 +1,6 @@
 {
   "name": "classy-immutable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Immutable instances of ES6 classes.",
   "keywords": [
     "es6",

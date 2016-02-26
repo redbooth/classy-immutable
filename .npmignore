@@ -1,1 +1,5 @@
 .babelrc
+.git
+.gitignore
+.idea
+.npmignore
