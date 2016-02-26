@@ -14,7 +14,7 @@ function deepUnfreeze(obj) {
     let clone = new obj.constructor();
     for (let key in obj) {
         let prop = obj[key];
-        if (typeof prop === 'object' && prop !== null) {
+        if (typeof prop === 'object' && prop !== null && Object.isFrozen(prop)) {
             clone[key] = deepUnfreeze(prop);
         } else {
             clone[key] = prop;
